@@ -24,7 +24,7 @@ The above line requires the amount argument which is passed to the Deposit funct
 Contract.Ensures(
   Contract.Result<bool>() == true || false
 );
-````
+```
 The upper line ensures that the result of the function will always be either true or false depending on the flow of the code.
 
 ```
