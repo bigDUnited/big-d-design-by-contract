@@ -18,7 +18,7 @@ The project consists of a two C# files - a Program class with main method and an
 ```
 Contract.Requires(amount > 0);
 ```
-The upper line requires the amount argument which is passed to the Deposit function to be a positive number.
+The above line requires the amount argument which is passed to the Deposit function to be a positive number.
 
 ```
 Contract.Ensures(
@@ -32,7 +32,7 @@ Contract.EnsuresOnThrow<MoneyException>(
   Math.Abs(Contract.OldValue<double>(_balance) - _balance) < 0.01
 );
 ```
-The upper line ensures that an exception will be trown in case the amount which we are trying to add to the balance is less than 1.00.
+The above line ensures that an exception will be trown in case the amount which we are trying to add to the balance is less than 0.01.
 
 
 #### The Withdraw function contains the following Contract specific code:
@@ -40,26 +40,26 @@ The upper line ensures that an exception will be trown in case the amount which 
 ```
 Contract.Requires(amount > 0);
 ```
-The upper line requires the amount argument which is passed to the Deposit function to be a positive number.
+The above line requires the amount argument which is passed to the Withdraw function to be a positive number.
 
 ```
 Contract.Requires(_balance - amount > 0);
 ```
-The upper line ensures that the the final balance after the transaction will be bigger than 0.
+The above line ensures that the the final balance after the transaction will be bigger than 0.
 
 ```
 Contract.Ensures(
   Contract.Result<bool>() == true || false
 );
 ```
-The upper line ensures that the result of the function will always be either true or false depending on the flow of the code.
+The above line ensures that the result of the function will always be either true or false depending on the flow of the code.
 
 ```
 Contract.EnsuresOnThrow<MoneyException>(
    Math.Abs(Contract.OldValue<double>(_balance) - _balance) < 0.01
 );
  ```
-The upper line ensures that an exception will be trown in case the the final balance after the transaction will be bigger than 0.
+The above line ensures that an exception will be trown in case the the final balance after the transaction will be bigger or equal than 0.01 .
 
 #### Additional features :
 
