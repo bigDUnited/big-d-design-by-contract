@@ -33,7 +33,7 @@ namespace big_d_design_by_contract
         public bool Withdraw(double amount)
         {
             Contract.Requires(amount > 0);
-            //Contract.Requires(_balance - amount > 0);
+            Contract.Requires(_balance - amount > 0);
             Contract.Ensures(
                 Contract.Result<bool>() == true || false
             );
