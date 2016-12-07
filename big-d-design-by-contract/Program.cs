@@ -10,10 +10,9 @@ namespace big_d_design_by_contract
     {
         private static void Main(string[] args)
         {
-            Account acc = new Account(20);
-            Console.WriteLine(acc.Deposit(-1));
-            Console.WriteLine(acc.Withdraw(-30));
-            Console.ReadLine();
+            Account acc = new Account(-20);
+            acc.Deposit(-1);
+            acc.Withdraw(-30);
         }
     }
 }
