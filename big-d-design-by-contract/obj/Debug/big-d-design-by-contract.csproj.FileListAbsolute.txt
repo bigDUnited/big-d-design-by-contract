@@ -1,9 +1,0 @@
-F:\Skola - Files\7 Semester\Contract Based Development\Projects\big-d-design-by-contract\big-d-design-by-contract\bin\Debug\big-d-design-by-contract.exe.config
-F:\Skola - Files\7 Semester\Contract Based Development\Projects\big-d-design-by-contract\big-d-design-by-contract\bin\Debug\big-d-design-by-contract.exe
-F:\Skola - Files\7 Semester\Contract Based Development\Projects\big-d-design-by-contract\big-d-design-by-contract\bin\Debug\big-d-design-by-contract.pdb
-F:\Skola - Files\7 Semester\Contract Based Development\Projects\big-d-design-by-contract\big-d-design-by-contract\obj\Debug\big-d-design-by-contract.csprojResolveAssemblyReference.cache
-F:\Skola - Files\7 Semester\Contract Based Development\Projects\big-d-design-by-contract\big-d-design-by-contract\obj\Debug\big-d-design-by-contract.exe
-F:\Skola - Files\7 Semester\Contract Based Development\Projects\big-d-design-by-contract\big-d-design-by-contract\obj\Debug\big-d-design-by-contract.pdb
-F:\Skola - Files\7 Semester\Contract Based Development\Projects\big-d-design-by-contract\big-d-design-by-contract\obj\Debug\Decl\big-d-design-by-contract.exe
-F:\Skola - Files\7 Semester\Contract Based Development\Projects\big-d-design-by-contract\big-d-design-by-contract\obj\Debug\Decl\big-d-design-by-contract.pdb
-F:\Skola - Files\7 Semester\Contract Based Development\Projects\big-d-design-by-contract\big-d-design-by-contract\obj\Debug\CodeContractAnalysisRun.log

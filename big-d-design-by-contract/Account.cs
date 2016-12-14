@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics.Contracts;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace big_d_design_by_contract
 {
@@ -20,7 +16,7 @@ namespace big_d_design_by_contract
         {
             Contract.Requires<MoneyException>(amount > 0);
             Contract.EnsuresOnThrow<MoneyException>(
-                Contract.OldValue<double>(_balance) == _balance
+                Contract.OldValue(_balance) == _balance
             );
             //if (amount < 0) throw new MoneyException();
             //Contract.EndContractBlock();
@@ -33,7 +29,7 @@ namespace big_d_design_by_contract
             //Contract.Requires<MoneyException>(_balance - amount >= 0);
 
             Contract.EnsuresOnThrow<MoneyException>(
-                Math.Abs(Contract.OldValue<double>(_balance) - _balance) < 0.01
+                Math.Abs(Contract.OldValue(_balance) - _balance) < 0.01
             );
             //if (!(_balance >= amount) || !(amount > 0)) throw new MoneyException();
             _balance -= amount;
